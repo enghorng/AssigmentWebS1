@@ -1,0 +1,537 @@
+
+.whole_bkg{
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header_homepage{
+    width: 98%;
+    height: 60px;
+    margin-left: 1%;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 1.5%;
+}
+.web_menu{
+    width: 100%;
+    height: 50px;
+}
+.web_menu img{
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 50px ;
+    height: 50px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+    float: left;
+}
+.header_homepage h2{
+    color: black;
+    font-family: Algerian;
+    float: left;
+    margin-top: 17px;
+}
+.main_menu{
+    width: 83.5%;
+    height: 50px;
+    float: left;
+}
+.main_menu ul{
+    margin-top: 7px;
+    padding-left: 10px    
+}
+.main_menu li{
+    float: left;
+    height: 40px;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.main_menu a{
+    color: white;
+    text-align: center;
+    font-family: Khmer OS Bokor;
+    font-size: 18px;
+    font-weight: bold;    
+    margin-right: 20px;
+    text-decoration: none;    
+}
+.main_menu li:hover{
+    background: black;    
+}
+.header_banner{
+    width: 100%;
+    height: 270px;
+    float: left;
+    margin-top: -17px;
+}
+.body_homepage{
+    width: 98%; 
+    height: 2140px;
+    margin-left: 1%
+}
+.body_title{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    font-family: Kh Muol;
+    font-size: 20px;
+}
+.edu_image{
+    width: 25%;
+    height: 500px;
+    margin-right: 0;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: 3px groove black
+}
+.introduction{
+    width: 71%;
+    float: left;
+    padding-left: 1%;
+}
+.introduction p{
+    text-indent: 50px;
+    text-align: justify;
+    font-family: Kh Freehand;
+    font-size: 13px;
+} 
+.body_homepage hr{
+    height: 2px;
+    background: black
+}
+.school_column{
+    height: 50px;   
+    width: 100%;
+    background:#dff9fb; 
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+    float: left;
+}
+.introduction h3{
+    margin-top: 10px;
+    padding-left: 15px;
+    font-family: Kh Battambang;
+}
+.school_logo{
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+.school_column div{
+    height: 170px;   
+    width: 100%;
+    background:#dff9fb; 
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+    margin-top: 9px;
+    float: left;
+}
+.school_column p{
+    padding-left: 180px;
+    padding-right: 25px;
+    text-align: justify;
+    font-family: Kh Siemreap;
+}
+.school{
+    width: 100%;
+    height: 790px;
+}
+.scholarship{
+    width: 100%;
+    height: 820px;
+}
+.scholarship_column{
+    height: 50px;   
+    width: 100%;
+    background:#dff9fb; 
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+    float: left;
+}
+.kk{
+    height: 115px;   
+    width: 100%;
+    background:#dff9fb; 
+    margin-top: 9px;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+    float: left;
+}
+.scholarship_column h4{
+    color: blue;
+    margin-top: 10px;
+    padding-left: 80px;
+    padding-right: 25px;
+    text-align: justify;
+    font-family: Kh Siemreap;
+}
+.scholarship_column p{
+    margin-top: 7px;
+    padding-left: 50px;
+    font-family: Kh Siemreap;
+    float: left;
+}
+.ll{
+    background: #4e54c8;
+    color: blue;
+    margin-top: 10px;
+    padding-left: 80px;
+    padding-right: 25px;
+    text-align: justify;
+    font-family: Kh Siemreap;
+}
+.each_scholarship{
+    height: 50px;   
+    width: 100%;
+    float: left;
+}
+.scholarship_detail{
+    height: 32.5px;   
+    width: 50%;
+    float: left;
+}
+.link_readmore{
+    float: left;
+    text-align: right;
+    width: 100%;
+    height: 10px;
+}
+.link_readmore a{
+    font-family: Kh Siemreap;
+}
+.moeys_cambodia_fbpage{
+    width: 25%;
+    height: 170px;
+    margin-right: 0;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+}
+.ibc_bookcenter{
+    width: 25%;
+    height: 220px;
+    margin-right: 0;
+    margin-left: 2%;
+    margin-top: 0%;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+}
+.sponsor{    
+    background: rgb(206, 196, 196);
+    width: 25%;
+    height: 30px;
+    margin-right: 0;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+    float: left;
+
+}
+.sponsor p{
+    margin-top: 6px;
+    padding-left: 2%;
+    font-weight: bolder
+}
+.graduation{
+    width: 25%;
+    height: 200px;
+    margin-right: 0;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,.2);
+}
+
+
+/* //////////////// */
+/* pheary work */
+/* //////////// */
+
+.section{
+    /* margin: 12px; */
+    width: 1325px;
+    float: left;
+}
+.section_left{
+    width: 1000px;
+    height: 100%;
+    float: left;
+}
+
+ .findSchool{
+     padding-right: 50px;
+     text-align: center;
+    width: 100%;
+    height: 10%;
+    float: left;
+} 
+
+.find{
+    float: left;
+}
+  .main input,button{
+      margin-top: 18px;
+    width:400px;
+    border:2px solid grey;
+    font-size: 18px;
+    background-color: transparent;
+    color:black;
+}
+.main input:hover{
+    opacity: .8;
+}
+.main button{
+    width:25%;
+    background-color: #eee;
+    color:black;
+    transition: all 0.3s;
+    float: right;
+    /* border-left:0px; */
+    margin-right:50px;
+}
+.main button:hover{
+    opacity: .8;
+}
+
+
+.listUni{
+    width: 100%;
+    height: 40%;
+    float: left;
+} 
+
+/* School List */
+.li1,.li2,.li3,.li4,.li5,.li6,.li7,.li8,.li9{
+    width: 300px;
+    height: 200px;
+    float: left;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover, .li6:hover, .li7:hover,.li8:hover, .li9:hover{
+    opacity: 0.7;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.s1{
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+.s1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.schoolLink{  
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+.schoolLink a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-family:  Khmer OS Battambang;
+}
+
+/* Advertisment section */
+.section_right{
+    width: 305px;
+    height: 100%;
+    float: left;
+}
+
+ .ad1, .ad2, .ad3, .ad4, .ad5{
+    background-color: khaki;
+    width: 100%;
+    height: 250px;
+    float: left;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+.ad1 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.ad2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*
+.ad2{
+    background-color:black;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+.ad3{
+    background-color:aqua;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+.ad4{
+    background-color:#8f94fb;
+    width: 100%;
+    height: 200px;
+    float: left;
+} */
+
+.UniDetail{
+    width: 1000px;
+    height: 40%;
+    float: left;
+    /* background-color: #DFF9FB; */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.title_UniDetail
+{
+    width: 100%;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+.title_UniDetail h3{
+    font-family:  Kh Muol;
+    font-size: 30px;
+}
+.head{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    float: left;
+    margin-left: 30px;
+}
+.head1{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 60px;
+}
+.head3 ul{
+    list-style-type: none;
+}
+.head1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.head2{
+    padding-left: 40px;
+    height: 100%;
+    float: left;
+}
+h3{
+    text-shadow: 3px 2px grey;
+    font-family: Kh Muol;
+    font-size: 30px;
+}
+
+.fact1,.fact2{
+    width: 500px;
+    height: 250px;
+    float: left;
+}
+.fact3,.fact4{
+    width: 500px;
+    height: 150px;
+    float: left;
+}
+.fact5,.fact6{
+    width: 500px;
+    height: 400px;
+    float: left;
+}
+
+.schoolInfo{
+    width: 100%;
+    height: 90%;
+    float: left;
+}
+.Unifooter{
+    background:grey;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+/* all text style */
+p, .head3 a{
+    font-family: Khmer OS Battambang;
+}
+
+.computerScience{
+    float: left;
+    /* padding: 30px; */
+    width: 900px;
+    /* background-color: #DFF9FB; */
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Kh Muol;
+}
+.schedule td{
+    font-family: Khmer OS Battambang;
+    padding-right: 70px;
+}
+.computerScience h4{
+    font-size: 25px;
+}
+
+.computerScience h5{
+    font-size: 20px;
+}
+
+/* Footer Style */
+.footer_homepage{
+    float: left;
+    width: 100%;
+    height: 200px;
+    background: #ecfcff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.f1{
+    padding-left: 50px;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.f2{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.f3{
+    padding-left: 70px;
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-left: 10px;
+}
+.footer-font{
+   
+    font-family: Khmer OS Bokor;
+}
+.text1{
+    font-size: 15px;
+}
+.footer_homepage i{
+    font-size: 50px;
+    padding: 5px;
+}
+

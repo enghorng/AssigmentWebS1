@@ -1,85 +1,403 @@
 <!DOCTYPE HTML>
 <html>
+
     <head>
-        <title> សាកលវិទ្យាល័យ </title>
+        <title> សាកលវិទ្យាល័យ</title>
         <style>
-            @import url(../CSS/homepage.css);           
+            @import url(../CSS/universityStyle.css);          
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
         <link rel="stylesheet" type="text/css" href="../Banner Slide/engine1/style.css" />
         <script type="text/javascript" src="../Banner Slide/engine1/jquery.js"></script>
         <!-- End WOWSlider.com HEAD section -->
         <script type="text/javascript" src="../js/jquery.js"></script>
         <script>
-            $(document).ready(function(){
-                $("#moredetail").hide();
-                $("#read").click(function(){
-                    var d = $("#read").text();
-                    
-                    if(d=='អានបន្ថែម'){
-                        $("#read").text("បិទការអាន");
-                        $("#moredetail").show();
-                        $("#body_size").css("height","2490px");
-                    }
-                    else{
-                        $("#read").text("អានបន្ថែម");
-                        $("#moredetail").hide();
-                        $("#body_size").css("height","2030px");
-                    }
-                });
-            });
+            $("document").ready(function(){
+        var school = ["rupp", "22", "33","44","55","66","77"];
+        var schoolBox=[$(".li1").html(),$(".li2").html(),$(".li3").html(),$(".li4").html(),
+        $(".li5").html(),$(".li6").html(),$(".li7").html(),$(".li8").html(),$(".li9").html()];
+    
+          $("#btnsearch").click(function(){
+              var word,s=0;
+              word=$(".search-item").val();
+              for(var i=0;i<school.length;i++){
+                  if(word==school[i]){
+                      school[i]=schoolBox[i];
+                     $(".listUni").html(school[i]);
+                      s=1;
+                  }
+              }
+              if(s==0){
+                  alert("Search not found");
+              }
+          });
+       });
         </script>
     </head>
     <body class="whole_bkg" id="main">
-        <div>
-            <div class="header_homepage">
-                <div class="web_menu">
-                    <a href="main.html">
-                        <img src="../Images/UniversityLogo.png">
-                        <h2> <big>s</big><small>ls group</small> </h2>
-                    </a>
-                    <div class="main_menu">
-                        <ul>
-                            <li>
-                                <a href="main.html"> ទំពរ័ដើម </a>
-                            </li>
-                            <li>
-                                    <a href="university.html"> សាកលវិទ្យាល័យ </a>
-                            </li>
-                            <li>
-                                    <a href="scholarship.html"> អាហារូបករណ៏ </a>
-                            </li>
-                            <li>
-                                    <a href="about.html"> អំពី Web Site </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header_banner">
-                    <center>
-                        <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-                        <div id="wowslider-container1">
-                            <div class="ws_images"><ul>
-                                <li><img src="../Banner Slide/data1/images/beltei banner.jpg" alt="" title="" id="wows1_0"/></li>
-                                <li><img src="../Banner Slide/data1/images/itc banner.jpg" alt="" title="" id="wows1_1"/></li>
-                                <li><img src="../Banner Slide/data1/images/rule banner.png" alt="" title="" id="wows1_2"/></li>
-                                <li><a href="http://wowslider.net"><img src="../Banner Slide/data1/images/rupp banner.jpg" alt="bootstrap carousel example" title="" id="wows1_3"/></a></li>
-                                <li><img src="../Banner Slide/data1/images/western banner.png" alt="" title="" id="wows1_4"/></li>
-                            </ul></div>
-                            <div class="ws_bullets"><div>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/beltei banner.jpg" alt=""/>1</span></a>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/itc banner.jpg" alt=""/>2</span></a>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/rule banner.png" alt=""/>3</span></a>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/rupp banner.jpg" alt=""/>4</span></a>
-                                <a href="#" title=""><span><img src="Banner Slide/data1/tooltips/western banner.png" alt=""/>5</span></a>
-                            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel example</a> by WOWSlider.com v8.8</div>
-                            <div class="ws_shadow"></div>
-                            </div>	
-                            <script type="text/javascript" src="../Banner Slide/engine1/wowslider.js"></script>
-                            <script type="text/javascript" src="../Banner Slide/engine1/script.js"></script>
-                            <!-- End WOWSlider.com BODY section -->
-                    </center>
+    <!-- Header -->
+        <div class="header_homepage" style="height: 60px">
+            <div class="web_menu">
+                <a href="main.html">
+                    <img src="../Images/UniversityLogo.png">
+                    <h2> <big>s</big><small>ls group</small> </h2>
+                </a>
+                <div class="main_menu">
+                    <ul>
+                        <li>
+                            <a href="main.html"> ទំពរ័ដើម </a>
+                        </li>
+                        <li>
+                                <a href="university.html"> សាកលវិទ្យាល័យ </a>
+                        </li>
+                        <li>
+                            <a href="file:///G:/AssigmentWebS1-Enghorng/Assignment/scholarship/scholarshipListV1.html#"> អាហារូបករណ៏ </a>
+                        </li>
+                        <li>
+                                <a href="about.html"> អំពី Web Site </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    </body>
+
+        <!-- pheary -->
+    <div class="section">
+
+        <div class="section_left">
+                <div class="findSchool">
+                    <div class="find"><p>ស្វែងរកសាកលវិទ្យាល័យ</p></div>
+                         
+
+                         <div class="main">
+                                <input type="search" class="search-item">
+                                <button id="btnsearch">SEARCH</button>
+                            </div>     
+                </div>
+                <div class="listUni">
+                    <div class="foundSchool"></div>
+                    <div class="li1">
+                        <div class="s1">
+                            <img src="../Images/ruppUni.jpg" alt="RUPP">
+                        </div>
+                        <div class="schoolLink">
+                            <a href="#rupp1">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</a>
+                        </div>
+                    </div>
+
+                    <div class="li2">
+                            <div class="s1">
+                                    <img src="../Images/PetUni.jpg" alt="Pet">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យ​វិទ្យា​សាស្ត្រ​សុខាភិបាល</a>
+                                </div>
+                    </div>
+                    <div class="li3">
+                            <div class="s1">
+                                    <img src="../Images/western.png" alt="Western University">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យវេស្ទើន</a>
+                                </div>
+                    </div>
+                    <div class="li4">
+                            <div class="s1">
+                                    <img src="../Images/nortonUni.jpg" alt="Norton University">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យន័រតុន</a>
+                                </div>
+                    </div>
+                    <div class="li5">
+                            <div class="s1">
+                                    <img src="../Images/auppUni.jpg" alt="Western University">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យអាមេរិកកាំងភ្នំពេញ</a>
+                                </div>
+                    </div>
+                    <div class="li6">
+                            <div class="s1">
+                                    <img src="../Images/numUni.jpg" alt="Western University">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យជាតិគ្រប់គ្រង</a>
+                                </div>
+                    </div>
+                    <div class="li7">
+                            <div class="s1">
+                                    <img src="../Images/ticno.jpg" alt="ITC">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា</a>
+                                </div>
+                    </div>
+                    <div class="li8">
+                            <div class="s1">
+                                    <img src="../Images/phumin.png" alt="Western University">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យភូមិន្ទកសិកម្ម</a>
+                                </div>
+                    </div>
+                    <div class="li9">
+                            <div class="s1">
+                                    <img src="../Images/paragon.jpg" alt="Western University">
+                                </div>
+                                <div class="schoolLink">
+                                    <a href="#">សាកលវិទ្យាល័យផារ៉ាហ្គន</a>
+                                </div>
+                    </div>
+
+                </div>
+
+                <div class="UniDetail">
+                    <div class="title_UniDetail">
+                        <h3>ព័ត៌មានលម្អិតរបស់សាកលវិទ្យាល័យ</h3>
+                    </div>
+                    <div class="head">
+                        <div class="head1">
+                            <img src="../Images/rupp_logo.png" alt="">
+                        </div>
+                        <div class="head2">
+                            <h3>សាកលវិទ្យាល័យ​ភូមិន្ទភ្នំពេញ</h3>
+                        </div>
+                    </div>
+                    <div class="head3" id="rupp1">
+                        <p>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញមានមហាវិទ្យាល័យទាំងអស់ចនួន៦ និង មានជំនាញតាមមហាវិទ្យាល័យដូចខាងក្រោម:</p>
+                        <div class="fact1">
+                                <p>ក. មហាវិទ្យាល័យ រិទ្យាសាស្រ្ត</p>
+                                <ul>
+                                    <li><a href="#cs">ព័ត៌មានវិទ្យា</a></li>
+                                    <li><a href="#cs">គណិតវិទ្យា</a></li>
+                                    <li><a href="#cs">រូបវិទ្យា</a></li>
+                                    <li><a href="#cs">គីមីវិទ្យា</a></li>
+                                    <li><a href="#cs">ជីរវិទ្យា</a></li>
+                                    <li><a href="#cs">បរិស្ថានរិទ្យា</a></li>
+                                </ul>
+                               
+                        </div>
+                        
+                        <div class="fact2">
+                                <p>ខ. វិទ្យាស្ថានភាសាបរទេស</p>
+                                <ul>
+                                    <li><a href="#">ភាសាអង់គ្លេស</a></li>
+                                    <li><a href="#">ភាសាបារាំង</a></li>
+                                    <li><a href="#">សិក្សាអន្តរជាតិ</a></li>
+                                    <li><a href="#">ភាសាជប៉ុន</a></li>
+                                    <li><a href="#">ភាសាចិន</a></li>
+                                    <li><a href="#">ភាសាកូរ៉េ</a></li>
+                                    <li><a href="#">ភាសាថៃ</a></li>
+                                </ul>
+                        </div>
+
+                            
+                        <div class="fact3">
+                                <p>គ. មហាវិទ្យាល័យ សិក្សាអភិវឌ្ឍន៍</p>
+                                <ul>
+                                    <li><a href="#">អភិវឌ្ឍន៍សេដ្ធកិច្ច</a></li>
+                                    <li><a href="#">គ្រប់គ្រងនិង អភិវឌ្ឍន៍ធនធានមនុស្ស</a></li>
+                                    <li><a href="#">អភិវឌ្ឍន៍សហគមន៍</a></li>
+                                </ul>
+                        </div>
+
+                        
+                        <div class="fact4">
+                                <p>ឃ. មហាវិទ្យាល័យ រិស្វកម្ម</p>
+                                <ul>
+                                    <li><a href="#">រិស្វកម្មទូរគមនាគមន៍ និងអេឡិចត្រូនិច</a></li>
+                                    <li><a href="#">រិស្វកម្ម ជីវសាស្ត្រ</a></li>
+                                    <li><a href="#">រិស្វកម្ម បច្ចេកវិទ្យាព័ត៌មាន</a></li>
+                                </ul>
+                        </div>
+                        
+                        <div class="fact5">
+                                <p>ង. មហាវិទ្យាល័យ អប់រំ</p>
+                                <ul>
+                                    <li><a href="#">អប់រំពេញមួយជីវិត</a></li>
+                                    <li><a href="#">សិក្សាអប់រំ</a></li>
+                                    <li><a href="#">គ្រប់គ្រងនិងអភិវឌ្ឍន៍ឧត្តមសិក្សា</a></li>
+                                </ul>
+                        </div>
+
+                        <div class="fact6">
+                                <p>ច. មហាវិទ្យាល័យ សង្គមសាស្ត្រ-​​ មនុស្សសាស្ត្រ</p>
+                                <ul>
+                                    <li><a href="#">អក្សរសាស្រ្តខ្មែរ</a></li>
+                                    <li><a href="#">ទស្សនវិជ្ជា</a></li>
+                                    <li><a href="#">ភូមិវិទ្យា</a></li>
+                                    <li><a href="#">សង្គមរិទ្យា</a></li>
+                                    <li><a href="#">ចិត្្តវិទ្យា</a></li>
+                                    <li><a href="#">ប្រវត្តិរិទ្យា</a></li>
+                                    <li><a href="#">ទេសចរណ៌</a></li>
+                                    <li><a href="#">សង្គមកិច្ចរិទ្យា</a></li>
+                                    <li><a href="#">គ្រប់គ្រងពាណិជ្ជកម្មអន្តរជាតិ</a></li>
+                                    <li><a href="#">ភាសាវិទ្យា</a></li>
+                                    <li><a href="#">ប្រព័ន្ធផ្សព្ធផ្សាយ និងសារគមនាគមន៌</a></li>
+        
+                                </ul>
+                        </div>   
+                    </div>
+                    <div class="schoolInfo"></div>
+                </div>
+
+                <div class="computerScience"​​ id="cs">
+                        <h4>ក1. មហាវិទ្យាល័យវិទ្យាសាស្ត្រ-ដេប៉ាតឺម៉ង់ព័ត៌មានវិទ្យា</h4>
+                        <br>
+
+                        <h5>សេចក្តីផ្តើម</h5>
+                        <p>ដេប៉ាតឺម៉ង់ព័ត៌មានវិទ្យា បានបង្កើតឡើងនៅក្នុងឆ្នាំ ១៩៩០ និងបានបណ្តុះបណ្តាល និស្សិតកម្ពុជា អោយមាន
+                             ជំនាញផ្នែកបច្ចេកវិទ្យាព័ត៌មានដែលប្រកបដោយសមត្ថភាពខ្ពស់ ដើម្បីឆ្លើយតបនឹងតម្រូវការរបស់
+                            សង្គមជាតិ និងតំបន់។
+                        </p> 
+
+                        <h5>ចក្ខុវិស័យ</h5>
+                        <p>ដេប៉ាតឺម៉ង់ព័ត៌មានវិទ្យា សម្រេចអោយបានកម្មវិធីសិក្សាផ្នែកព័ត៌មានវិទ្យាមួយ ដែលធានាបានចំណេះដឹង 
+                            ផ្នែកបច្ចេកទេសព័ត៌មានវិទ្យា ការស្រាវជ្រាវ ការវិភាគ និងដោះស្រាយបញ្ហាតាមបែបវិទ្យាសាស្ត្រទំនើប និង
+                            មានការប្រើ ICT ប្រកបដោយគុណភាពខ្ពស់ និងវឌ្ឍភាន ដែលបំបេញនូវតម្រូវការរបស់
+                            សង្គមជាតិ និងតំបន់។
+                        </p>
+
+                        <h5>គោលបំណង</h5>
+                            <ul>
+                                <li>
+                                    <p>
+                                        អោយនិស្សិតមានសមត្ថភាព ខ្ពស់ទាំងផ្នែកបច្ចេកវិទ្យាព័ត៌មាន និងចំណេះដឹងទូទៅនៃសង្គម
+                                        ស្របទៅតាមសម័យកាលសកលភាវូបនីយកម្ម។
+                                    </p>
+                                </li>
+                                <li>
+                                        <p>
+                                         អោយនិស្សិតទទួលបានចំណេះដឹងខាងទ្រឹស្តី ផ្សារភ្ជាប់ទៅនឹងការអនុវត្តផ្ទាល់ លើជំនាញវិទ្យា
+                                         សាស្ត្រកំព្យូទ័រនិងក្លាយទៅជា អ្នកគ្រប់គ្រងប្រព័ន្ធទិន្នន័យ អ្នករៀបចំដំឡើង និងគ្រប់
+                                         គ្រងបណ្តាញកំព្យូទ័រ(Window and linux) អ្នកសរសេរកម្មវិធី និងបង្កើតកម្មវិធីកំព្យូទ័រ (Window 
+                                         Application and Web Application) អ្នកបង្កើតនិងគ្រប់គ្រងproject អ្នកវិភាគទិន្នន័យ និង
+                                         ប្រព័ន្ធផ្សេងៗ អ្នកគ្រប់គ្រងប្រព័ន្ធទិន្នន័យ និងអ្នករចនារូបភាព សំឡេង វីដេអូលើកំព្យូទ័រ
+                                         (Multimedia System and Application)។
+                                        </p>
+                                    </li>
+                                    <li>
+                                            <p>
+                                             អោយនិស្សិតទទួលបានចំណេះដឹងខាងទ្រឹស្តី ផ្សារភ្ជាប់ទៅនឹងការអនុវត្តផ្ទាល់ លើជំនាញវិទ្យា
+                                             សាស្ត្រកំព្យូទ័រនិងក្លាយទៅជា អ្នកគ្រប់គ្រងប្រព័ន្ធទិន្នន័យ អ្នករៀបចំដំឡើង និងគ្រប់
+                                             គ្រងបណ្តាញកំព្យូទ័រ(Window and linux) អ្នកសរសេរកម្មវិធី និងបង្កើតកម្មវិធីកំព្យូទ័រ (Window 
+                                             Application and Web Application) អ្នកបង្កើតនិងគ្រប់គ្រងproject អ្នកវិភាគទិន្នន័យ និង
+                                             ប្រព័ន្ធផ្សេងៗ អ្នកគ្រប់គ្រងប្រព័ន្ធទិន្នន័យ និងអ្នករចនារូបភាព សំឡេង វីដេអូលើកំព្យូទ័រ
+                                             (Multimedia System and Application)។
+                                            </p>
+                                        </li>
+                            </ul>
+                            <h5>ធនធានមនុស្ស</h5>
+                            <p>
+                                ដេប៉ាតឺម៉ង់ព័ត៌មានវិទ្យា មានសាស្រ្តាចារ្យគ្រប់គ្រាន់ ប្រកបដោយគុណភាពខ្ពស់ និងមានបទពិសោធន៍យូរឆ្នាំក្នុងការ
+                                បង្រៀន ព្រមទាំងបានបញ្ចប់ថ្នាក់បរិញ្ញាបត្រ័ជាន់ខ្ពស់ ថ្នាក់បណ្ឌិត មកពីប្រទេសដូចជា ជប៉ុន សឹង្ហបុរី ហ្វីលីពីន 
+                                កាណាដា អូស្ត្រាលី អាឡឺម៉ង់ រៀតណាម និងថៃ។
+                            </p>
+                            <h5>ឧបករណ៍ សម្ភារសិក្សា និងសេវាកម្ម</h5>
+                            <p>
+                                ដេប៉ាតឺម៉ង់ព័ត៌មានវិទ្យា មានបន្ទប់អនុវត្តកំព្យូទ័រធំទូលាយដែលបានបំពាក់កំព្យូទ័រទំនើបៗ តភ្ជាប់ជាបណ្តាញ
+                                Intranet, មាន Internet ដែលផ្តល់ភាពងាយស្រួលដល់និស្សិត, LCD Projectors គ្រប់គ្រាន់សម្រាប់បញ្ចាំងក្នុង
+                                ម៉ោងសិក្សា, ឯកសារ សៀវភៅកំព្យូទ័រជាភាសាអង់គ្លេស និងខ្មែរ ដែលមាននៅក្នុងបណ្ណាល័យ ហ៊ុន សែន និងមាន
+                                Internet សម្រាប់សាស្ត្រាចារ្យ និងនិស្សិត។
+                            </p>
+                            <h5>កម្មវិធីសិក្សា</h5>
+                            <p>កម្មវិធីសិក្សាមានរយពេល៤ឆ្នាំសម្រាប់ថ្នាក់បរិញ្ញាបត្រ័។</p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        ឆ្នាំទី១៖ សិក្សាកម្មវិធីថ្នាក់មូលដ្ធានផ្នែកវិទ្យាសាស្ត្រ និងជំនាញកំព្យូទ័រ។
+                                    </p>
+                                </li>
+                                <li>
+                                        <p>
+                                            ឆ្នាំទី២៖ សិក្សាកម្មវិធីថ្នាក់មូលដ្ធានគ្រឹះនៃឯកទេសកំព្យូទ័រ។
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                            ឆ្នាំទី៣ និងទី៤៖ សិក្សាកម្មវិធីផ្នែកវិទ្យាសាស្ត្រកំព្យូទ័រ និងឯកទេសកំព្យូទ័រកម្រិតខ្ពស់។
+                                        </p>
+                                    </li>
+                            </ul>
+                            <h5>ម៉ោងសិក្សាថ្នាក់បរិញ្ញាបត្រ</h5>
+                            <table class="schedule">
+                                <tr>
+                                    <td>ថ្នាក់ព្រឹក</td>
+                                    <td>៧ៈ៣០ នាទី ដល់ ១០ៈ៤៥ នាទី</td>                                    
+                                </tr>
+                                <tr>
+                                        <td>ថ្នាក់រសៀល</td>
+                                        <td>២ៈ០០ នាទី ដល់ ៥ៈ១៥ នាទី</td>                                    
+                                </tr>
+                                <tr>
+                                            <td>ថ្នាក់យប់</td>
+                                            <td>៥ៈ៣០នាទី ដល់ ៨ៈ៣០ នាទី</td>                                    
+                                </tr>
+                            </table>
+
+                            <h5>តម្លៃសិក្សាក្នុង១ឆ្នាំ</h5>
+                            <p>​​​ថ្នាក់ព្រឹក ថ្នាក់រសៀល និង ថ្នាក់យប់ <b><em>៥០០ដុល្លារ</em></b></p>
+
+                            <h5>ការជូនជាដំណឹង</h5>
+                            <p>ក្នុងឆ្នាំសិក្សា ២០១៩ ២០២០ សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញនឹងធ្វើការជ្រើសរើសនិស្សិតអោយចូលរៀន
+                                ថ្នាក់បរិញ្ញាប័ត្របង់ថ្លៃ ជំនាញព័ត៌មានរិទ្យាចំនួន៣៥០ នាក់
+                            </p>
+                                <ul>
+                                    <li>
+                                        <p>សិស្ស និស្សិតដែលមានសញ្ញាប័ត្រមធ្យមសិក្សា ឆ្នាំ ២០០២ ដល់ ២០១៩ អាចធ្វើការដាក់ពាក្យបាន</p>
+                                    </li>
+                                    <li>
+                                        <p>សិស្ស និស្សិតត្រូវមាននិទ្ទេស A->F ចំពោះមុខវិជ្ជា រូបវិទ្យា និង គណិតវិទ្យា</p>
+                                    </li>
+                                </ul>
+
+                            <h5>ព័ត៌មានលម្អិត</h5>
+                            <p>សូមអញ្ជើញមកទំនាក់ទំនង នៅសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ ដែលមានទីតាំងស្ថិតនៅតាមបណ្តោយមហាវិថី
+                                សហព័ន្ធរុស្សី អគារA បន្ទប់លេខ១០១ ជាន់ទី១ ឬទំនាក់ទំនងតាមលេខទូរស័េព្ទៈ​<br>
+                                <a href="#">០២៣ ៨៨១ ២៨៥</a> / <a href="#">០២៣​៨៨៣​៨៩២</a>​ /
+                                <a href="#">០៨៨ ៦៤៥​ ៧៦១</a> /  <a href="#">០៧៧​៥៣៣​៥៣២</a>
+                            </p>
+        
+
+
+                </div>
+        </div>
+
+        <div class="section_right">
+                <div class="ad1">
+                    <img src="../Images/sonyAd1.jpg" alt="">
+                </div>
+                <div class="ad2">
+                    <img src="../Images/adver2.jpg" alt="">
+                </div>
+                <div class="ad3"></div>
+                <div class="ad4"></div>
+                <div class="ad5"></div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_homepage">
+        <div class="f1">
+            <p class="footer-font">&copy; រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ និស្សិត SLS ជំនាន់ទី២០</p>
+           <p class="footer-font">អាស័យដ្ធាន</p>
+           <p class="text1">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ ដែលមានទីតាំងស្ថិតនៅតាមបណ្តោយមហាវិថីសហព័ន្ធរុស្សី</p>
+        </div>
+        <div class="f2">
+            <p class="footer-font">អំពីយើង</p>
+            <p class="text1">ពួកយើងជាក្រុមនិស្សិតអាហារូបករណ៌មកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ ឆ្នាំទី៤​ ដែលមានសមានជិកទាំងអស់៥នាក់
+                និងកំពុងសិក្សាជំនាញព័ត៌មានវិទ្យា
+            </p>
+        </div>
+        <div class="f3">
+            <p class="footer-font">ជួបពួកយើងនៅបណ្តាញសង្គម</p>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-envelope-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>        
+</body>
+
 </html>
