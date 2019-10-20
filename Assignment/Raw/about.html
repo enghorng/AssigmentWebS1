@@ -1,85 +1,130 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title> អំពី Web Site </title>
-        <style>
-            @import url(../CSS/homepage.css);           
-        </style>
-        <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-        <link rel="stylesheet" type="text/css" href="../Banner Slide/engine1/style.css" />
-        <script type="text/javascript" src="../Banner Slide/engine1/jquery.js"></script>
-        <!-- End WOWSlider.com HEAD section -->
-        <script type="text/javascript" src="../js/jquery.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("#moredetail").hide();
-                $("#read").click(function(){
-                    var d = $("#read").text();
-                    
-                    if(d=='អានបន្ថែម'){
-                        $("#read").text("បិទការអាន");
-                        $("#moredetail").show();
-                        $("#body_size").css("height","2490px");
-                    }
-                    else{
-                        $("#read").text("អានបន្ថែម");
-                        $("#moredetail").hide();
-                        $("#body_size").css("height","2030px");
-                    }
-                });
-            });
-        </script>
-    </head>
-    <body class="whole_bkg" id="main">
-        <div>
-            <div class="header_homepage">
-                <div class="web_menu">
-                    <a href="main.html">
-                        <img src="../Images/UniversityLogo.png">
-                        <h2> <big>s</big><small>ls group</small> </h2>
-                    </a>
-                    <div class="main_menu">
-                        <ul>
-                            <li>
-                                <a href="main.html"> ទំពរ័ដើម </a>
-                            </li>
-                            <li>
-                                    <a href="university.html"> សាកលវិទ្យាល័យ </a>
-                            </li>
-                            <li>
-                                    <a href="scholarship.html"> អាហារូបករណ៏ </a>
-                            </li>
-                            <li>
-                                    <a href="about.html"> អំពី Web Site </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="header_banner">
-                    <center>
-                        <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-                        <div id="wowslider-container1">
-                            <div class="ws_images"><ul>
-                                <li><img src="../Banner Slide/data1/images/beltei banner.jpg" alt="" title="" id="wows1_0"/></li>
-                                <li><img src="../Banner Slide/data1/images/itc banner.jpg" alt="" title="" id="wows1_1"/></li>
-                                <li><img src="../Banner Slide/data1/images/rule banner.png" alt="" title="" id="wows1_2"/></li>
-                                <li><a href="http://wowslider.net"><img src="../Banner Slide/data1/images/rupp banner.jpg" alt="bootstrap carousel example" title="" id="wows1_3"/></a></li>
-                                <li><img src="../Banner Slide/data1/images/western banner.png" alt="" title="" id="wows1_4"/></li>
-                            </ul></div>
-                            <div class="ws_bullets"><div>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/beltei banner.jpg" alt=""/>1</span></a>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/itc banner.jpg" alt=""/>2</span></a>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/rule banner.png" alt=""/>3</span></a>
-                                <a href="#" title=""><span><img src="../Banner Slide/data1/tooltips/rupp banner.jpg" alt=""/>4</span></a>
-                                <a href="#" title=""><span><img src="Banner Slide/data1/tooltips/western banner.png" alt=""/>5</span></a>
-                            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap carousel example</a> by WOWSlider.com v8.8</div>
-                            <div class="ws_shadow"></div>
-                            </div>	
-                            <script type="text/javascript" src="../Banner Slide/engine1/wowslider.js"></script>
-                            <script type="text/javascript" src="../Banner Slide/engine1/script.js"></script>
-                            <!-- End WOWSlider.com BODY section -->
-                    </center>
+
+<head>
+    <title> អំពីពួកយើង </title>
+    <style>
+        @import url(../CSS/about.css); 
+         @import url(../CSS/universityStyle.css);
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="whole_bkg" id="main">
+    <div>
+        <div class="header_homepage">
+            <div class="web_menu">
+                <a href="main.html">
+                    <img src="../Images/UniversityLogo.png">
+                    <h2> <big>s</big><small>ls group</small> </h2>
+                </a>
+                <div class="main_menu">
+                    <ul>
+                        <li>
+                            <a href="main.html"> ទំពរ័ដើម </a>
+                        </li>
+                        <li>
+                            <a href="university.html"> សាកលវិទ្យាល័យ </a>
+                        </li>
+                        <li>
+                            <a href="../scholarship/scholarshipListV1.html"> អាហារូបករណ៏ </a>
+                        </li>
+                        <li>
+                            <a href="about.html"> អំពី Web Site </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    </body>
+        </div>
+    </div>
+    <!-- Leap session -->
+    <div class="bigBox">
+        <div class="box1">
+            <div class="box1-left">
+                <img src="../Images/question.png" alt="">
+            </div>
+            <div class="box1-rigth">
+                    <h2>ចង់ដឹងព័ត៌មានច្បាស់ពីសាកលវិទ្យាល័យមែនទេ?​</h2>
+                    <p><i><b>ព័ត៌មានសាកលវិទ្យានិងអាហារូបករណ៌គឺជាគេហទំព័រមួយដែលជួយដល់សិស្សដែលទើបបញ្ចប់
+                        ការសិក្សាមធ្យមសិក្សាទុតិយភូមិក្នុងការស្វែងយល់អោយបានច្បាស់ពីសាកលវិទ្យាល័យនានាក្នុងព្រះរាជាណាចក្រ
+                        កម្ពុជា លើសពីនេះទៅទៀតគេហទំព័រនេះក៏ផ្តល់ព័ត៌មានអំពីអាហារូបករណ៌ផងដែរ៕ 
+                    </b></i></p>
+            </div>
+            
+        </div>
+        <div class="box1-teacher">
+                <div class="box1-teacher-left">
+                    <h2>សេចក្តីថ្លែងអំណរគុណ</h2>
+                    <p><i><b>ក្រុមយើងខ្ញុំសូមធ្វើសេចក្តីថ្លែងអំណរគុណយ៉ាងខ្លាំងចំពេោះលោកសាស្ត្រាចារ្យ ជឹម ប៊ុនធឿន ដែលបានចំណាយ
+                        ពេលវេលាដ៏មានតម្លៃក្នុងការបង្រៀនពួកយើង និងជាអ្នកផ្តួចផ្តើមគំនិតបង្កើតគេហទំព័រមួយនេះអោយលេចចេញជា
+                        រូបរាងឡើង។
+                    </b></i></p>
+                </div>
+                <div class="box1-teacher-rigth">
+                        <img src="../Images/teacher.jpg" alt="">
+                </div>
+                
+            </div>
+        <div class="box2">
+            <div class="box2-head">
+                <h2>ពួកយើងជានរណា?</h2>
+                <p>ពួកយើងជាក្រុមនិស្សិតអាហារូបករណ៌មកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ ឆ្នាំទី៤​ ដែលមានសមានជិកទាំងអស់៥នាក់
+                        និងកំពុងសិក្សាជំនាញព័ត៌មានវិទ្យា។</p>
+            </div>
+            <div class="box2-img">
+                <img src="../Images/ChhengLin.jpg" alt="" class="image">
+                <div class="overlay">
+                    <div class="text">Hor ChhengLin</div>
+                </div>
+            </div>
+            <div class="box2-img">
+                    <img src="../Images/Senghak.jpg" alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Khoun Senghak</div>
+                    </div>
+                </div>
+                <div class="box2-img">
+                        <img src="../Images/Enghorng.jpg" alt="" class="image">
+                        <div class="overlay">
+                            <div class="text">Lean Enghorng</div>
+                        </div>
+                    </div>
+                    <div class="box2-img">
+                            <img src="../Images/Pheary.jpg" alt="" class="image">
+                            <div class="overlay">
+                                <div class="text"><b>Sopheary</b> </div>
+                            </div>
+                        </div>
+                        <div class="box2-img">
+                                <img src="../Images/SreyLeap.jpg" alt="" class="image">
+                                <div class="overlay">
+                                    <div class="text">Roun SreyLeap</div>
+                                </div>
+                            </div>
+        </div>
+        <div class="box3"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_homepage">
+        <div class="f1">
+            <p class="footer-font">&copy; រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ និស្សិត SLS ជំនាន់ទី២០</p>
+           <p class="footer-font">អាស័យដ្ធាន</p>
+           <p class="text1">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ ដែលមានទីតាំងស្ថិតនៅតាមបណ្តោយមហាវិថីសហព័ន្ធរុស្សី</p>
+        </div>
+        <div class="f2">
+            <p class="footer-font">អំពីយើង</p>
+            <p class="text1">ពួកយើងជាក្រុមនិស្សិតអាហារូបករណ៌មកពីសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ ឆ្នាំទី៤​ ដែលមានសមានជិកទាំងអស់៥នាក់
+                និងកំពុងសិក្សាជំនាញព័ត៌មានវិទ្យា
+            </p>
+        </div>
+        <div class="f3">
+            <p class="footer-font">ជួបពួកយើងនៅបណ្តាញសង្គម</p>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-envelope-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>        
+</body>
+
 </html>
